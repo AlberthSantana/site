@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <form action="">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome"><br>
+
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email"><br>
+
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade"><br>
+
+        <label for="materia">Para qual matéria você está se candidatando ? </label>
+        <select name="materia" id="materia">
+            <option value="selecione">Selecione...</option>
+            <option value="matematica">Matemática</option>
+            <option value="portugues">Português</option>
+            <option value="biologia">Biologia</option>
+            <option value="ciencias">Ciências</option>
+            <option value="historia">História</option>
+            <option value="biologia">Biologia</option>
+            <option value="artes">Artes</option>
+        </select>
+
+        <p>Nivel de escolaridade</p>
+        <input type="radio" name="escolaridade" id="superiorcompleto" value="superiorcompleto">
+        <label for="superiorcompleto">Superior Completo</label><br>
+
+        <input type="radio" name="escolaridade" id="cursonadomestrado" value="cursonadomestrado">
+        <label for="cursonadomestrado">Cursando mestrado</label><br>
+
+        <input type="radio" name="escolaridade" id="mestadocompleto" value="mestadocompleto">
+        <label for="mestadocompleto">Mestrado completo</label><br>
+
+        <input type="radio" name="escolaridade" id="cursandodoutorado" value="cursandodoutorado">
+        <label for="cursandodoutorado">Cursando doutorado</label><br>
+
+        <input type="radio" name="escolaridade" id="doutoradocompleto" value="doutoradocompleto">
+        <label for="doutoradocompleto">Doutorado completo</label><br>
+
+        <label for="descricao">Faça uma descrição desi mesmo.</label><br>
+        <textarea name="descricao" id="descricao" maxlength="200" cols="40" rows="6"></textarea>
+
+
+
+    </form>
+</body>
+</html>
