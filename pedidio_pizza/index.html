@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido pizza</title>
+</head>
+
+<body>
+    <h1>Faça seu pedido</h1>
+
+    <h3>Sabores: </h3>
+
+    <ul>
+        <li>1-Calabresa</li>
+        <li>2-quatro queijos</li>
+        <li>3-Frango com catupiry</li>
+        <li>4-Brigadeiro</li>
+    </ul>
+
+    <label>
+        Escolha o sabor:
+        <input type="number" id="sabor" style="display: block; margin-top: 10px;">
+    </label>
+
+    <button id="btn" style="margin-top: 15px; padding: 10px 20px; font-size: 18px;">Pedir</button>
+
+
+    <script>
+        const btn = document.getElementById("btn")
+        const inputSabor = document.getElementById("sabor")
+
+        btn.addEventListener("click", function () {
+            switch (inputSabor.value) {
+                case "1":
+                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de calabresa`)
+                    break
+                case "2":
+                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de quatro queijos`)
+                    break
+                case "3":
+                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de  frango com catupiry`)
+                    break
+                case "4":
+                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de brigadeiro`)
+                    break
+                default:
+                    alert("Pedido inválido !!!")
+            }
+        })
+    </script>
+</body>
+
+</html>
