@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Formulário</title>
+    <style>
+        label {
+            display: inline-block;
+            position: relative;
+        }
+
+        label::after {
+            content: "*";
+            position: absolute;
+            top: 5px;
+            right: -10px;
+            color: rgb(151, 0, 0);
+        }
+
+        input {
+            margin-bottom: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="form">
+        <fieldset>
+            <label for="email">Email: </label>
+            <input type="text" id="email">
+
+            <label for="telefone">Telefone: </label>
+            <input type="text" id="telefone">
+
+            <label for="senha">Senha: </label>
+            <input type="text" id="senha">
+
+            <input id="btn" type="submit" style="display: block;">
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

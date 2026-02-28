@@ -10,43 +10,31 @@
 <body>
     <h1>Faça seu pedido</h1>
 
-    <h3>Sabores: </h3>
+    <h2>Sabores: </h2>
 
-    <ul>
-        <li>1-Calabresa</li>
-        <li>2-quatro queijos</li>
-        <li>3-Frango com catupiry</li>
-        <li>4-Brigadeiro</li>
-    </ul>
+    <select name="sabor" id="sabor" style="display: block; margin-bottom: 15px; padding: 8px; font-weight: bold;">
+        <option value="">Selecione o Sabor</option>
+        <option value="Calabresa">Calabresa</option>
+        <option value="Frango com catupiry">Frango com catupiry</option>
+        <option value="Quatro queijos">Quatro queijos</option>
+        <option value="Brigadeiro">Brigadeiro</option>
+    </select>
 
-    <label>
-        Escolha o sabor:
-        <input type="number" id="sabor" style="display: block; margin-top: 10px;">
-    </label>
-
-    <button id="btn" style="margin-top: 15px; padding: 10px 20px; font-size: 18px;">Pedir</button>
+    
+    <button id="btn" style="margin-top: 15px; padding: 10px 20px; font-size: 18px;">Pedi Agora</button>
 
 
     <script>
         const btn = document.getElementById("btn")
-        const inputSabor = document.getElementById("sabor")
+        const sabor = document.getElementById("sabor")
 
         btn.addEventListener("click", function () {
-            switch (inputSabor.value) {
-                case "1":
-                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de calabresa`)
-                    break
-                case "2":
-                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de quatro queijos`)
-                    break
-                case "3":
-                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de  frango com catupiry`)
-                    break
-                case "4":
-                    alert(`Pedido realizado com sucesso.Seu pedido foi uma pizza de brigadeiro`)
-                    break
-                default:
-                    alert("Pedido inválido !!!")
+            const saborSelecionado = sabor.value
+
+            if (saborSelecionado) {
+                alert(`Pedido realizado com sucesso ! \n Sabor: ${saborSelecionado}`)
+            } else {
+                alert("Selecione um sabor")
             }
         })
     </script>
